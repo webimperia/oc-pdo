@@ -111,7 +111,6 @@ final class OC_PDO
      */
     public function escape($string = null)
     {
-        return $string;
         return $this->dbh ? $this->dbh->quote($string) : null;
     }
 
